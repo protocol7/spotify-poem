@@ -76,7 +76,7 @@ class Poem:
         
 class Spotify():
     
-    def __init__(self, http_client = httplib.Http(timeout=20)):
+    def __init__(self, http_client = httplib.Http(".cache", timeout=20)):
         self.http_client = http_client
     
     def search(self, track_name):  
